@@ -72,3 +72,15 @@ a.nav-link {
 @media (max-width: 914px) {
     a.nav-link { font-size: 10px; }
 }
+
+@media print{
+    .main {
+        -webkit-box-shadow: none;
+        -moz-box-shadow:    none;
+        box-shadow:         none !important; 
+    }
+    
+    .item {
+        page-break-inside: avoid !important;
+    }
+}
